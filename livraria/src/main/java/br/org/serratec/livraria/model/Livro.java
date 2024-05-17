@@ -1,6 +1,5 @@
 package br.org.serratec.livraria.model;
 
-import jakarta.annotation.Generated;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
@@ -26,7 +25,8 @@ public class Livro {
 	private String titulo;
 
 	@Embedded
-	private InfoPubli infopubli;
+	@Column(name = "informacao_publicacao")
+	private InformacaoPublicacao informacaoPublicacao;
 
 	public Long getId() {
 		return id;
@@ -44,12 +44,12 @@ public class Livro {
 		this.titulo = titulo;
 	}
 
-	public InfoPubli getInfopubli() {
-		return infopubli;
+	public InformacaoPublicacao getInformacaoPublicacao() {
+		return informacaoPublicacao;
 	}
 
-	public void setInfopubli(InfoPubli infopubli) {
-		this.infopubli = infopubli;
+	public void setInformacaoPublicacao(InformacaoPublicacao informacaoPublicacao) {
+		this.informacaoPublicacao = informacaoPublicacao;
 	}
 
 }

@@ -10,20 +10,20 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 
 @Embeddable
-public class InfoPubli {
+public class InformacaoPublicacao {
 
-	@Column(name = "autor", nullable = false)
+	@Column(name = "autor")
 	@NotBlank(message = "Insira o autor")
 	@Size(max = 30, message = "Limite de 30 caracteres alcançado")
 	private String autor;
 	
-	@Column(name = "dataPublicacao", nullable = false)
+	@Column(name = "dataPublicacao")
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
 	@NotBlank(message = "Insira a data de publicação")
 	@Size(max = 20, message = "Limite de 20 caracteres alcançado")
 	private Date dataPublicacao;
 	
-	@Column(name = "editora", nullable = false)
+	@Column(name = "editora")
 	@NotBlank(message = "Insira a editora do livro")
 	@Size(max = 30, message = "Limite de 30 caracteres alcançado")
 	private String editora;
