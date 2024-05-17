@@ -1,4 +1,4 @@
-# Api-Serratec-Indidual
+# Api-Serratec-Individual
  ## :detective: Índice
 
 * Sobre o Projeto
@@ -19,10 +19,12 @@ O projeto foi realizado durante a disciplina de Desenvolvimento de API Restful d
 
 ##  Endpoints
 
+URI Base: http://localhost:8080
+
 <img src="swaggerIndividual.PNG">
 
 ## Autor
 
-- [Gabriel Pimentel](https://github.com/GabrielnPimentel)
+- 👦 [Gabriel Pimentel](https://github.com/GabrielnPimentel)
 
  
